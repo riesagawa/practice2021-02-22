@@ -55,6 +55,27 @@ header{
   line-height: 36px;
 }
 /* =============================
+top
+============================= */
+.top{
+  background-image: url(../img/main-vsual-nontitle.png);
+  background-size:cover;
+  padding:80px 0;
+}
+
+.top-title{
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sub-title{
+  font-size:18px;
+  text-align: center;
+}
+
+
+/* =============================
 （共通クラス）section
 ============================= */
 .section{
@@ -145,4 +166,103 @@ footer{
 .copylight{
   font-size: 12px;
   float:right;  
+}
+
+
+
+
+/* =============================
+スマホ用表示 767以下。iPadが768だから。
+============================= */
+@media only screen and (max-width:767px){
+  .clear::after{
+    content:none;
+  }
+  body{
+    width:100%;
+  }
+/* =============================
+header mq
+============================= */
+.header-left{
+  float: none;
+}
+.header-title{
+  text-align: center;
+}
+.header-right{
+  float:none;
+}
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav-item{
+  float: none;
+  margin:0;
+}
+/* =============================
+top mq
+============================= */
+.top{
+  padding: 120px 0;
+}
+.top-title{
+  font-size: 32px;
+}
+.sub-title{
+  font-size:14px;
+}
+/* =============================
+（共通クラス）section mq
+============================= */
+.section{
+  padding:80px 0;
+}
+.section-title{
+  font-size:24px;
+  font-weight:bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section p{
+  font-size: 14px;
+}
+/* =============================
+about mq
+============================= */
+.about-left{
+  float:none;
+  width:100%;
+  margin-bottom: 20px;
+}
+.about-right{
+  float:none;
+  width:100%;
+}
+/* =============================
+course mq
+============================= */
+.course-wrapper{
+  flex-wrap: wrap;
+}
+.course-item{
+  width: 100%;
+  margin-bottom: 20px 0;
+}
+/* =============================
+contact mq
+============================= */
+input[type="email"],input[type="text"]{
+  width:100%;
+}
+/* =============================
+footer mq
+============================ */
+.copylight{
+  font-size:10px;
+  float: none;
+  text-align: center;
+}
+
 }
